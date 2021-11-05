@@ -4,6 +4,9 @@ namespace App\Entity;
 
 use App\Repository\CommentRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
+
+
 
 /**
  * @ORM\Entity(repositoryClass=CommentRepository::class)
@@ -19,11 +22,13 @@ class Comment
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("post:read")
      */
     private $username;
 
     /**
      * @ORM\Column(type="text")
+     * @Groups("post:read")
      */
     private $content;
 
