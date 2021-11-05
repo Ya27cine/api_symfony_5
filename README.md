@@ -1,4 +1,4 @@
-# cours-api-symfony
+# __api-symfony_5
 Code du cours sur les API avec Symfony
 
 # Installation
